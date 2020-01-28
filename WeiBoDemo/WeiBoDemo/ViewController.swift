@@ -13,10 +13,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let urlStr = "asdasdasdasd"
         Alamofire.request(urlStr).responseJSON { (response) in
             
         }
+        
     }
 
 
