@@ -17,7 +17,6 @@
 		B44AD38D23E41D1300DFFD35 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AD38B23E41D1300DFFD35 /* WelcomeViewController.swift */; };
 		B44AD38E23E41D1300DFFD35 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44AD38C23E41D1300DFFD35 /* WelcomeViewController.xib */; };
 		B48EA2F223E02A9C002D5D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA2F123E02A9C002D5D59 /* AppDelegate.swift */; };
-		B48EA2F423E02A9C002D5D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA2F323E02A9C002D5D59 /* SceneDelegate.swift */; };
 		B48EA2F923E02A9C002D5D59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48EA2F723E02A9C002D5D59 /* Main.storyboard */; };
 		B48EA2FB23E02A9D002D5D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA2FA23E02A9D002D5D59 /* Assets.xcassets */; };
 		B48EA2FE23E02A9D002D5D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48EA2FC23E02A9D002D5D59 /* LaunchScreen.storyboard */; };
@@ -33,6 +32,9 @@
 		B4F7495823E6CCBE00A61C3F /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7495723E6CCBE00A61C3F /* MessageViewController.swift */; };
 		B4F7495A23E6CCD300A61C3F /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7495923E6CCD300A61C3F /* DiscoverViewController.swift */; };
 		B4F7495C23E6CCE900A61C3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7495B23E6CCE900A61C3F /* ProfileViewController.swift */; };
+		B4F7499F23E80F1300A61C3F /* VisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7499E23E80F1300A61C3F /* VisterView.swift */; };
+		B4F749A123E80F2900A61C3F /* VisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F749A023E80F2900A61C3F /* VisterView.xib */; };
+		B4F749A323E8203E00A61C3F /* SwiftPch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F749A223E8203E00A61C3F /* SwiftPch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +68,6 @@
 		B44AD38C23E41D1300DFFD35 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		B48EA2EE23E02A9C002D5D59 /* WeiBoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48EA2F123E02A9C002D5D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B48EA2F323E02A9C002D5D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B48EA2F823E02A9C002D5D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B48EA2FA23E02A9D002D5D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48EA2FD23E02A9D002D5D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +88,9 @@
 		B4F7495723E6CCBE00A61C3F /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		B4F7495923E6CCD300A61C3F /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		B4F7495B23E6CCE900A61C3F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B4F7499E23E80F1300A61C3F /* VisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisterView.swift; sourceTree = "<group>"; };
+		B4F749A023E80F2900A61C3F /* VisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisterView.xib; sourceTree = "<group>"; };
+		B4F749A223E8203E00A61C3F /* SwiftPch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPch.swift; sourceTree = "<group>"; };
 		E3910979EE2869713F4C69B6 /* Pods-WeiBoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBoDemo.release.xcconfig"; path = "Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +163,7 @@
 			children = (
 				B44AD37723E1804700DFFD35 /* NetWork */,
 				B44AD36D23E034B400DFFD35 /* WeiBoDemo-Bridging-Header.h */,
+				B4F749A223E8203E00A61C3F /* SwiftPch.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -237,6 +242,8 @@
 			children = (
 				B44AD38923E41CD500DFFD35 /* BaseViewController.swift */,
 				B4F7494623E6C10D00A61C3F /* TabbarViewController.swift */,
+				B4F7499E23E80F1300A61C3F /* VisterView.swift */,
+				B4F749A023E80F2900A61C3F /* VisterView.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -270,7 +277,6 @@
 				B44AD37523E1784300DFFD35 /* Classes */,
 				B44AD37123E034DA00DFFD35 /* Sources */,
 				B48EA2F123E02A9C002D5D59 /* AppDelegate.swift */,
-				B48EA2F323E02A9C002D5D59 /* SceneDelegate.swift */,
 			);
 			path = WeiBoDemo;
 			sourceTree = "<group>";
@@ -457,6 +463,7 @@
 				B4F7495523E6CA5500A61C3F /* Profile.storyboard in Resources */,
 				B4F7494B23E6C84E00A61C3F /* Message.storyboard in Resources */,
 				B48EA2F923E02A9C002D5D59 /* Main.storyboard in Resources */,
+				B4F749A123E80F2900A61C3F /* VisterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44AD38D23E41D1300DFFD35 /* WelcomeViewController.swift in Sources */,
+				B4F749A323E8203E00A61C3F /* SwiftPch.swift in Sources */,
 				B44AD37323E1781D00DFFD35 /* BackDownManager.swift in Sources */,
 				B4F7494723E6C10D00A61C3F /* TabbarViewController.swift in Sources */,
 				B44AD37B23E40B1000DFFD35 /* NetWorkTools.swift in Sources */,
@@ -532,7 +540,7 @@
 				B4F7495A23E6CCD300A61C3F /* DiscoverViewController.swift in Sources */,
 				B48EA2F223E02A9C002D5D59 /* AppDelegate.swift in Sources */,
 				B4F7494523E56FC900A61C3F /* HomeViewController.swift in Sources */,
-				B48EA2F423E02A9C002D5D59 /* SceneDelegate.swift in Sources */,
+				B4F7499F23E80F1300A61C3F /* VisterView.swift in Sources */,
 				B44AD38A23E41CD500DFFD35 /* BaseViewController.swift in Sources */,
 				B44AD37923E1807C00DFFD35 /* networkAdapter.swift in Sources */,
 				B4F7495823E6CCBE00A61C3F /* MessageViewController.swift in Sources */,

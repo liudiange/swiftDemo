@@ -3,7 +3,7 @@
 //
 
 #import "MJRefresh.h"
-//#import <Alamofire/Alamofire.h>
+//#import <Alamofire/Alamofire-Swift>
 //#import <KakaJSON/KakaJSON-Swift.h>
 //#import <Kingfisher/Kingfisher-Swift.h>
 //#import <SwiftyJSON/SwiftyJSON-Swift.h>
