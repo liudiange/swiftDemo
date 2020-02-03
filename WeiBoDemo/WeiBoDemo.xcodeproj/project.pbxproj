@@ -3,19 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		620FCA054FACA1B04E23F73A /* libPods-WeiBoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB52723C61AE4E379A6B962 /* libPods-WeiBoDemo.a */; };
+		B44AD37323E1781D00DFFD35 /* BackDownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AD37223E1781D00DFFD35 /* BackDownManager.swift */; };
+		B44AD37923E1807C00DFFD35 /* networkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AD37823E1807C00DFFD35 /* networkAdapter.swift */; };
+		B44AD37B23E40B1000DFFD35 /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AD37A23E40B1000DFFD35 /* NetWorkTools.swift */; };
+		B44AD37F23E4156100DFFD35 /* UserAccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AD37E23E4156100DFFD35 /* UserAccountManager.swift */; };
+		B44AD38123E417F600DFFD35 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AD38023E417F600DFFD35 /* UserAccount.swift */; };
+		B44AD38A23E41CD500DFFD35 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AD38923E41CD500DFFD35 /* BaseViewController.swift */; };
+		B44AD38D23E41D1300DFFD35 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AD38B23E41D1300DFFD35 /* WelcomeViewController.swift */; };
+		B44AD38E23E41D1300DFFD35 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44AD38C23E41D1300DFFD35 /* WelcomeViewController.xib */; };
 		B48EA2F223E02A9C002D5D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA2F123E02A9C002D5D59 /* AppDelegate.swift */; };
 		B48EA2F423E02A9C002D5D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA2F323E02A9C002D5D59 /* SceneDelegate.swift */; };
-		B48EA2F623E02A9C002D5D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA2F523E02A9C002D5D59 /* ViewController.swift */; };
 		B48EA2F923E02A9C002D5D59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48EA2F723E02A9C002D5D59 /* Main.storyboard */; };
 		B48EA2FB23E02A9D002D5D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA2FA23E02A9D002D5D59 /* Assets.xcassets */; };
 		B48EA2FE23E02A9D002D5D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48EA2FC23E02A9D002D5D59 /* LaunchScreen.storyboard */; };
 		B48EA30923E02A9D002D5D59 /* WeiBoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA30823E02A9D002D5D59 /* WeiBoDemoTests.swift */; };
 		B48EA31423E02A9D002D5D59 /* WeiBoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA31323E02A9D002D5D59 /* WeiBoDemoUITests.swift */; };
+		B4F7494523E56FC900A61C3F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7494423E56FC900A61C3F /* HomeViewController.swift */; };
+		B4F7494723E6C10D00A61C3F /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7494623E6C10D00A61C3F /* TabbarViewController.swift */; };
+		B4F7494923E6C5BE00A61C3F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7494823E6C5BE00A61C3F /* Home.storyboard */; };
+		B4F7494B23E6C84E00A61C3F /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7494A23E6C84E00A61C3F /* Message.storyboard */; };
+		B4F7494F23E6C94600A61C3F /* Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7494E23E6C94600A61C3F /* Plus.storyboard */; };
+		B4F7495323E6CA3400A61C3F /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7495223E6CA3400A61C3F /* Discover.storyboard */; };
+		B4F7495523E6CA5500A61C3F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7495423E6CA5500A61C3F /* Profile.storyboard */; };
+		B4F7495823E6CCBE00A61C3F /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7495723E6CCBE00A61C3F /* MessageViewController.swift */; };
+		B4F7495A23E6CCD300A61C3F /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7495923E6CCD300A61C3F /* DiscoverViewController.swift */; };
+		B4F7495C23E6CCE900A61C3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7495B23E6CCE900A61C3F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +56,17 @@
 		8950F4CF90739965D6BA53B1 /* Pods-WeiBoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBoDemo.debug.xcconfig"; path = "Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9EB52723C61AE4E379A6B962 /* libPods-WeiBoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeiBoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44AD36D23E034B400DFFD35 /* WeiBoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B44AD37223E1781D00DFFD35 /* BackDownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackDownManager.swift; sourceTree = "<group>"; };
+		B44AD37823E1807C00DFFD35 /* networkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkAdapter.swift; sourceTree = "<group>"; };
+		B44AD37A23E40B1000DFFD35 /* NetWorkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
+		B44AD37E23E4156100DFFD35 /* UserAccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountManager.swift; sourceTree = "<group>"; };
+		B44AD38023E417F600DFFD35 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		B44AD38923E41CD500DFFD35 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B44AD38B23E41D1300DFFD35 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B44AD38C23E41D1300DFFD35 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		B48EA2EE23E02A9C002D5D59 /* WeiBoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48EA2F123E02A9C002D5D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B48EA2F323E02A9C002D5D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B48EA2F523E02A9C002D5D59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B48EA2F823E02A9C002D5D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B48EA2FA23E02A9D002D5D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48EA2FD23E02A9D002D5D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +77,16 @@
 		B48EA30F23E02A9D002D5D59 /* WeiBoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiBoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48EA31323E02A9D002D5D59 /* WeiBoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiBoDemoUITests.swift; sourceTree = "<group>"; };
 		B48EA31523E02A9D002D5D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F7494423E56FC900A61C3F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B4F7494623E6C10D00A61C3F /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		B4F7494823E6C5BE00A61C3F /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B4F7494A23E6C84E00A61C3F /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		B4F7494E23E6C94600A61C3F /* Plus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plus.storyboard; sourceTree = "<group>"; };
+		B4F7495223E6CA3400A61C3F /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		B4F7495423E6CA5500A61C3F /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		B4F7495723E6CCBE00A61C3F /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		B4F7495923E6CCD300A61C3F /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		B4F7495B23E6CCE900A61C3F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E3910979EE2869713F4C69B6 /* Pods-WeiBoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBoDemo.release.xcconfig"; path = "Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,11 +127,118 @@
 		B44AD37123E034DA00DFFD35 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B4F7495423E6CA5500A61C3F /* Profile.storyboard */,
+				B4F7495223E6CA3400A61C3F /* Discover.storyboard */,
+				B4F7494E23E6C94600A61C3F /* Plus.storyboard */,
+				B4F7494A23E6C84E00A61C3F /* Message.storyboard */,
+				B4F7494823E6C5BE00A61C3F /* Home.storyboard */,
+				B48EA2F723E02A9C002D5D59 /* Main.storyboard */,
 				B48EA2FA23E02A9D002D5D59 /* Assets.xcassets */,
 				B48EA2FC23E02A9D002D5D59 /* LaunchScreen.storyboard */,
 				B48EA2FF23E02A9D002D5D59 /* Info.plist */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		B44AD37523E1784300DFFD35 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B44AD38623E41C5D00DFFD35 /* Profile */,
+				B44AD38523E41C4C00DFFD35 /* Discover */,
+				B4F7495623E6CB6400A61C3F /* Plus */,
+				B44AD38423E41C3800DFFD35 /* Message */,
+				B44AD38323E41C2700DFFD35 /* Home */,
+				B44AD38223E41C1D00DFFD35 /* Main */,
+				B44AD37D23E4151200DFFD35 /* OAuth */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B44AD37623E1785500DFFD35 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B44AD37723E1804700DFFD35 /* NetWork */,
+				B44AD36D23E034B400DFFD35 /* WeiBoDemo-Bridging-Header.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B44AD37723E1804700DFFD35 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				B44AD37223E1781D00DFFD35 /* BackDownManager.swift */,
+				B44AD37823E1807C00DFFD35 /* networkAdapter.swift */,
+				B44AD37A23E40B1000DFFD35 /* NetWorkTools.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		B44AD37D23E4151200DFFD35 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B44AD37E23E4156100DFFD35 /* UserAccountManager.swift */,
+				B44AD38023E417F600DFFD35 /* UserAccount.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		B44AD38223E41C1D00DFFD35 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B44AD38823E41CAA00DFFD35 /* Base */,
+				B44AD38723E41C6C00DFFD35 /* Welcome */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B44AD38323E41C2700DFFD35 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7494323E56F8D00A61C3F /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B44AD38423E41C3800DFFD35 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7495F23E6D2F500A61C3F /* ViewController */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B44AD38523E41C4C00DFFD35 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7495E23E6D2DE00A61C3F /* ViewController */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B44AD38623E41C5D00DFFD35 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7495D23E6D2C800A61C3F /* Viewcontroller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B44AD38723E41C6C00DFFD35 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B44AD38B23E41D1300DFFD35 /* WelcomeViewController.swift */,
+				B44AD38C23E41D1300DFFD35 /* WelcomeViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B44AD38823E41CAA00DFFD35 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B44AD38923E41CD500DFFD35 /* BaseViewController.swift */,
+				B4F7494623E6C10D00A61C3F /* TabbarViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		B48EA2E523E02A9C002D5D59 = {
@@ -125,12 +266,11 @@
 		B48EA2F023E02A9C002D5D59 /* WeiBoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B44AD37623E1785500DFFD35 /* Tools */,
+				B44AD37523E1784300DFFD35 /* Classes */,
 				B44AD37123E034DA00DFFD35 /* Sources */,
 				B48EA2F123E02A9C002D5D59 /* AppDelegate.swift */,
 				B48EA2F323E02A9C002D5D59 /* SceneDelegate.swift */,
-				B48EA2F523E02A9C002D5D59 /* ViewController.swift */,
-				B48EA2F723E02A9C002D5D59 /* Main.storyboard */,
-				B44AD36D23E034B400DFFD35 /* WeiBoDemo-Bridging-Header.h */,
 			);
 			path = WeiBoDemo;
 			sourceTree = "<group>";
@@ -151,6 +291,45 @@
 				B48EA31523E02A9D002D5D59 /* Info.plist */,
 			);
 			path = WeiBoDemoUITests;
+			sourceTree = "<group>";
+		};
+		B4F7494323E56F8D00A61C3F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7494423E56FC900A61C3F /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B4F7495623E6CB6400A61C3F /* Plus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plus;
+			sourceTree = "<group>";
+		};
+		B4F7495D23E6D2C800A61C3F /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7495B23E6CCE900A61C3F /* ProfileViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		B4F7495E23E6D2DE00A61C3F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7495923E6CCD300A61C3F /* DiscoverViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B4F7495F23E6D2F500A61C3F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7495723E6CCBE00A61C3F /* MessageViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		EF26B541409C01B0BD4E31AD /* Pods */ = {
@@ -269,8 +448,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F7494F23E6C94600A61C3F /* Plus.storyboard in Resources */,
+				B4F7495323E6CA3400A61C3F /* Discover.storyboard in Resources */,
 				B48EA2FE23E02A9D002D5D59 /* LaunchScreen.storyboard in Resources */,
+				B4F7494923E6C5BE00A61C3F /* Home.storyboard in Resources */,
+				B44AD38E23E41D1300DFFD35 /* WelcomeViewController.xib in Resources */,
 				B48EA2FB23E02A9D002D5D59 /* Assets.xcassets in Resources */,
+				B4F7495523E6CA5500A61C3F /* Profile.storyboard in Resources */,
+				B4F7494B23E6C84E00A61C3F /* Message.storyboard in Resources */,
 				B48EA2F923E02A9C002D5D59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +523,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48EA2F623E02A9C002D5D59 /* ViewController.swift in Sources */,
+				B44AD38D23E41D1300DFFD35 /* WelcomeViewController.swift in Sources */,
+				B44AD37323E1781D00DFFD35 /* BackDownManager.swift in Sources */,
+				B4F7494723E6C10D00A61C3F /* TabbarViewController.swift in Sources */,
+				B44AD37B23E40B1000DFFD35 /* NetWorkTools.swift in Sources */,
+				B4F7495C23E6CCE900A61C3F /* ProfileViewController.swift in Sources */,
+				B44AD37F23E4156100DFFD35 /* UserAccountManager.swift in Sources */,
+				B4F7495A23E6CCD300A61C3F /* DiscoverViewController.swift in Sources */,
 				B48EA2F223E02A9C002D5D59 /* AppDelegate.swift in Sources */,
+				B4F7494523E56FC900A61C3F /* HomeViewController.swift in Sources */,
 				B48EA2F423E02A9C002D5D59 /* SceneDelegate.swift in Sources */,
+				B44AD38A23E41CD500DFFD35 /* BaseViewController.swift in Sources */,
+				B44AD37923E1807C00DFFD35 /* networkAdapter.swift in Sources */,
+				B4F7495823E6CCBE00A61C3F /* MessageViewController.swift in Sources */,
+				B44AD38123E417F600DFFD35 /* UserAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +720,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.company.WeiBoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WeiBoDemo/WeiBoDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeiBoDemo/Tools/WeiBoDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -546,7 +742,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.company.WeiBoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WeiBoDemo/WeiBoDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeiBoDemo/Tools/WeiBoDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
