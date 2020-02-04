@@ -34,10 +34,12 @@ extension BaseViewController{
 // MARK: 基本事件的坚挺
 extension BaseViewController{
     func addClickAction()  {
-        self.visterView.loginBlock = {
+        self.visterView.loginBlock = { [weak self] in
             
-            
-            
+            let oAuth = OAuthorController()
+            let nav = UINavigationController.init(rootViewController: oAuth)
+            self?.present(nav, animated: true, completion: nil)
+
         }
         self.visterView.registBlock = {
             

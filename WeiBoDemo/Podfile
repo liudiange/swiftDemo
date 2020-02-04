@@ -1,8 +1,9 @@
-platform :ios, '9.0'
+platform :ios, '11.0'
 target 'WeiBoDemo' do
 	pod 'Alamofire' 
 	pod 'Kingfisher'
 	pod 'SwiftyJSON'
 	pod 'KakaJSON'
 	pod 'MJRefresh'
+	pod 'SVProgressHUD'
 end

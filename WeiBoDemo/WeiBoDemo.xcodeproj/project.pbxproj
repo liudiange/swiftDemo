@@ -35,6 +35,9 @@
 		B4F7499F23E80F1300A61C3F /* VisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7499E23E80F1300A61C3F /* VisterView.swift */; };
 		B4F749A123E80F2900A61C3F /* VisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F749A023E80F2900A61C3F /* VisterView.xib */; };
 		B4F749A323E8203E00A61C3F /* SwiftPch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F749A223E8203E00A61C3F /* SwiftPch.swift */; };
+		B4F749A623E95FAD00A61C3F /* OAuthorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F749A423E95FAD00A61C3F /* OAuthorController.swift */; };
+		B4F749A723E95FAD00A61C3F /* OAuthorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F749A523E95FAD00A61C3F /* OAuthorController.xib */; };
+		B4F749A923E967D300A61C3F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F749A823E967D300A61C3F /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,9 @@
 		B4F7499E23E80F1300A61C3F /* VisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisterView.swift; sourceTree = "<group>"; };
 		B4F749A023E80F2900A61C3F /* VisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisterView.xib; sourceTree = "<group>"; };
 		B4F749A223E8203E00A61C3F /* SwiftPch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPch.swift; sourceTree = "<group>"; };
+		B4F749A423E95FAD00A61C3F /* OAuthorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthorController.swift; sourceTree = "<group>"; };
+		B4F749A523E95FAD00A61C3F /* OAuthorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAuthorController.xib; sourceTree = "<group>"; };
+		B4F749A823E967D300A61C3F /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E3910979EE2869713F4C69B6 /* Pods-WeiBoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBoDemo.release.xcconfig"; path = "Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +170,7 @@
 				B44AD37723E1804700DFFD35 /* NetWork */,
 				B44AD36D23E034B400DFFD35 /* WeiBoDemo-Bridging-Header.h */,
 				B4F749A223E8203E00A61C3F /* SwiftPch.swift */,
+				B4F749A823E967D300A61C3F /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -183,6 +190,8 @@
 			children = (
 				B44AD37E23E4156100DFFD35 /* UserAccountManager.swift */,
 				B44AD38023E417F600DFFD35 /* UserAccount.swift */,
+				B4F749A423E95FAD00A61C3F /* OAuthorController.swift */,
+				B4F749A523E95FAD00A61C3F /* OAuthorController.xib */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -462,6 +471,7 @@
 				B48EA2FB23E02A9D002D5D59 /* Assets.xcassets in Resources */,
 				B4F7495523E6CA5500A61C3F /* Profile.storyboard in Resources */,
 				B4F7494B23E6C84E00A61C3F /* Message.storyboard in Resources */,
+				B4F749A723E95FAD00A61C3F /* OAuthorController.xib in Resources */,
 				B48EA2F923E02A9C002D5D59 /* Main.storyboard in Resources */,
 				B4F749A123E80F2900A61C3F /* VisterView.xib in Resources */,
 			);
@@ -530,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F749A923E967D300A61C3F /* Common.swift in Sources */,
 				B44AD38D23E41D1300DFFD35 /* WelcomeViewController.swift in Sources */,
 				B4F749A323E8203E00A61C3F /* SwiftPch.swift in Sources */,
 				B44AD37323E1781D00DFFD35 /* BackDownManager.swift in Sources */,
@@ -538,6 +549,7 @@
 				B4F7495C23E6CCE900A61C3F /* ProfileViewController.swift in Sources */,
 				B44AD37F23E4156100DFFD35 /* UserAccountManager.swift in Sources */,
 				B4F7495A23E6CCD300A61C3F /* DiscoverViewController.swift in Sources */,
+				B4F749A623E95FAD00A61C3F /* OAuthorController.swift in Sources */,
 				B48EA2F223E02A9C002D5D59 /* AppDelegate.swift in Sources */,
 				B4F7494523E56FC900A61C3F /* HomeViewController.swift in Sources */,
 				B4F7499F23E80F1300A61C3F /* VisterView.swift in Sources */,
@@ -721,12 +733,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WeiBoDemo/Sources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.my.company.WeiBoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.520it.DS11WB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeiBoDemo/Tools/WeiBoDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -743,12 +755,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WeiBoDemo/Sources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.my.company.WeiBoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.520it.DS11WB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeiBoDemo/Tools/WeiBoDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
