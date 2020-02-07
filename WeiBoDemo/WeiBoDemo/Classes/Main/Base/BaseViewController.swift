@@ -12,7 +12,7 @@ class BaseViewController: UITableViewController {
 
     
     // MARK: 基本属性
-    var isLogin: Bool = false
+    var isLogin: Bool = UserAccountManager.shareInstance.isLogin
     let visterView = VisterView.visterView()
     override func loadView() {
         isLogin ? super.loadView() : generateLoginView()

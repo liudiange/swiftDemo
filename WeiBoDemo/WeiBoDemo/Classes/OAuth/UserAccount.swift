@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import KakaJSON
 
-class UserAccount: NSObject, NSCoding {
-    
+class UserAccount :NSObject, Convertible, NSCoding {
     
     // MARK:- 属性
     /// 授权AccessToken
@@ -22,30 +22,19 @@ class UserAccount: NSObject, NSCoding {
     }
     /// 用户ID
     var uid : String?
-    
     /// 过期日期
     var expires_date : NSDate?
-    
     /// 昵称
     var screen_name : String?
-    
     /// 用户的头像地址
     var avatar_large : String?
     
-    
-    // MARK:- 自定义构造函数
-    init(dict : [String : AnyObject]) {
-        super.init()
-        
-        setValuesForKeys(dict)
-    }
+    required override init(){}
 
     // MARK:- 重写description属性
     override var description : String {
         return dictionaryWithValues(forKeys: ["access_token", "expires_date", "uid", "screen_name", "avatar_large"]).description
     }
-    
-    
     // MARK:- 归档&解档
     /// 解档的方法
     required init?(coder aDecoder: NSCoder) {
@@ -55,7 +44,7 @@ class UserAccount: NSObject, NSCoding {
         avatar_large = aDecoder.decodeObject(forKey: "avatar_large") as? String
         screen_name = aDecoder.decodeObject(forKey: "screen_name") as? String
     }
-    
+
     /// 归档方法
     func encode(with coder: NSCoder) {
         coder.encode(access_token, forKey: "access_token")

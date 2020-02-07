@@ -3,6 +3,7 @@ PODS:
   - KakaJSON (1.1.2)
   - Kingfisher (4.10.1)
   - MJRefresh (3.3.1)
+  - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -10,6 +11,7 @@ DEPENDENCIES:
   - KakaJSON
   - Kingfisher
   - MJRefresh
+  - SVProgressHUD
   - SwiftyJSON
 
 SPEC REPOS:
@@ -18,6 +20,7 @@ SPEC REPOS:
     - KakaJSON
     - Kingfisher
     - MJRefresh
+    - SVProgressHUD
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -25,8 +28,9 @@ SPEC CHECKSUMS:
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 7ddc73f294df9d5ec8c89b8f528b8ee9bb961b5c
+PODFILE CHECKSUM: bcb83e5d99b9a94ef386f04b272ddbf7a6ee0ba6
 
 COCOAPODS: 1.7.1

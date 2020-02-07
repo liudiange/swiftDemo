@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,8 +19,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaY-1g-qy8">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="19.5" y="148" width="375" height="600"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="9NL-Bi-aMH"/>
+                        <constraint firstAttribute="height" constant="600" id="UEs-iU-nzV"/>
+                    </constraints>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                         <wkPreferences key="preferences"/>
@@ -30,12 +33,13 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DaY-1g-qy8" secondAttribute="bottom" id="HSe-74-Zhs"/>
-                <constraint firstItem="DaY-1g-qy8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JHu-To-f9X"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DaY-1g-qy8" secondAttribute="trailing" id="eNz-VH-6eL"/>
-                <constraint firstItem="DaY-1g-qy8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="i3p-38-7iA"/>
+                <constraint firstAttribute="trailing" secondItem="DaY-1g-qy8" secondAttribute="trailing" constant="19.5" id="5SL-U7-lBs"/>
+                <constraint firstItem="DaY-1g-qy8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GdR-cp-FdG"/>
+                <constraint firstAttribute="bottom" secondItem="DaY-1g-qy8" secondAttribute="bottom" constant="148" id="hgt-1c-RPf"/>
+                <constraint firstItem="DaY-1g-qy8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hzf-oJ-J20"/>
+                <constraint firstItem="DaY-1g-qy8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19.5" id="j6c-6Z-sbC"/>
+                <constraint firstItem="DaY-1g-qy8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="148" id="qYK-dO-Sse"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="154"/>
         </view>
     </objects>
