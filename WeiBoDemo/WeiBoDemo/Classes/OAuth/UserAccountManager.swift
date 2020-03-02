@@ -17,7 +17,7 @@ class UserAccountManager: NSObject {
     var accout :UserAccount?
     // MARK: - 计算属性
     var accoutPath: String {
-        let accoutP = NSSearchPathForDirectoriesInDomains(.documentationDirectory, .userDomainMask, true).first!
+        let accoutP = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         return (accoutP as NSString).appendingPathComponent("account.plist")
     }
     var isLogin: Bool{
@@ -28,7 +28,6 @@ class UserAccountManager: NSObject {
             return false
         }
         return expireDate.compare(Date()) == .orderedDescending
-
     }
     
     

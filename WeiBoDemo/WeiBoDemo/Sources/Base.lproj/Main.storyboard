@@ -10,7 +10,6 @@
         <!--Tabbar View Controller-->
         <scene sceneID="QUh-0g-38o">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NjR-bc-BK4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="Lt5-rg-8tP" customClass="TabbarViewController" customModule="WeiBoDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tqx-H2-SbA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -20,11 +19,11 @@
                     <connections>
                         <segue destination="8zn-G1-Sr0" kind="relationship" relationship="viewControllers" id="qQs-I1-Qsv"/>
                         <segue destination="k7Z-UT-Nr0" kind="relationship" relationship="viewControllers" id="d3a-Gk-vd9"/>
-                        <segue destination="yMh-WS-KFR" kind="relationship" relationship="viewControllers" id="o72-FO-ou2"/>
                         <segue destination="ryx-fM-p56" kind="relationship" relationship="viewControllers" id="AL5-t7-XY3"/>
                         <segue destination="qzj-Q7-y4x" kind="relationship" relationship="viewControllers" id="zzC-L2-Mux"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NjR-bc-BK4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-457" y="-41"/>
         </scene>
@@ -32,7 +31,9 @@
         <scene sceneID="E0V-eB-qRK">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="8zn-G1-Sr0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="JJQ-XW-ANw"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="tabbar_home" badgeValue="10" selectedImage="tabbar_home_highlighted" id="JJQ-XW-ANw">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kwE-Bs-AuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,27 +43,17 @@
         <scene sceneID="KcI-LH-ngy">
             <objects>
                 <viewControllerPlaceholder storyboardName="Message" id="k7Z-UT-Nr0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2Hw-GZ-hTK"/>
+                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message_center" selectedImage="tabbar_message_center_highlighted" id="2Hw-GZ-hTK"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whd-hN-fpE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="316" y="-191"/>
         </scene>
-        <!--Plus-->
-        <scene sceneID="q8L-nH-fAf">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Plus" id="yMh-WS-KFR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XTB-zz-tmH"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zyu-WG-JVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="294" y="-42"/>
-        </scene>
         <!--Discover-->
         <scene sceneID="HG5-BJ-nbL">
             <objects>
                 <viewControllerPlaceholder storyboardName="Discover" id="ryx-fM-p56" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Hl5-aV-KmP"/>
+                    <tabBarItem key="tabBarItem" title="发现" image="tabbar_discover" selectedImage="tabbar_discover_highlighted" id="Hl5-aV-KmP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Yz-V6-k54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,11 +63,21 @@
         <scene sceneID="Fkn-1O-Len">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="qzj-Q7-y4x" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="USd-X6-gzU"/>
+                    <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="USd-X6-gzU"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Hx-Tz-0LF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="306" y="188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tabbar_discover" width="30" height="30"/>
+        <image name="tabbar_discover_highlighted" width="30" height="30"/>
+        <image name="tabbar_home" width="30" height="30"/>
+        <image name="tabbar_home_highlighted" width="30" height="30"/>
+        <image name="tabbar_message_center" width="30" height="30"/>
+        <image name="tabbar_message_center_highlighted" width="30" height="30"/>
+        <image name="tabbar_profile" width="30" height="30"/>
+        <image name="tabbar_profile_highlighted" width="30" height="30"/>
+    </resources>
 </document>

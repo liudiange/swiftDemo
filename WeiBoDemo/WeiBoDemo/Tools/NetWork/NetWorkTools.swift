@@ -30,6 +30,7 @@ extension NetWorkTools{
             case.success(let json):
                 let jsonObj = JSON.init(json).dictionaryValue
                 let accoutModel = jsonObj.kj.model(UserAccount.self)
+                accoutModel.expires_date = NSDate(timeIntervalSinceNow: accoutModel.expires_in)
                 finish(accoutModel)
             case .failure(let error):
                 DGLog(error)
@@ -53,6 +54,38 @@ extension NetWorkTools{
                 finish(nil)
                 
             }
+        }
+    }
+}
+// MARK: 获得最新的数据
+extension NetWorkTools{
+    func accessHomeData(sinceId: Int,maxId: Int,finish:@escaping (_ dataArray: [StatusViewModel]?,_ error: Error?) -> ()) {
+        
+        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
+        let parameters = ["access_token" : UserAccountManager.shareInstance.accout?.access_token ?? "asd", "since_id" : "\(sinceId)", "max_id" : "\(maxId)"]
+        
+        Alamofire.request(urlString, method: .get, parameters: parameters as Parameters).responseJSON { (response) in
+            
+            switch response.result {
+            case .success(let json):
+                let jsonObj = JSON.init(json).dictionary
+                let statuses = jsonObj?["statuses"]?.arrayObject
+                let array = statuses?.kj.modelArray(Status.self)
+                var backArray = [StatusViewModel]()
+                guard array != nil else {
+                    finish(nil,nil)
+                    return
+                }
+                for model in array! {
+                    let statusModel = StatusViewModel(status: model)
+                    backArray.append(statusModel)
+                }
+                finish(backArray,nil)
+            case .failure(let error):
+                print(error)
+                finish(nil,error)
+            }
+            
         }
     }
 }

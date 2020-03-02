@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - HYLabel (1.0.2)
   - KakaJSON (1.1.2)
   - Kingfisher (4.10.1)
   - MJRefresh (3.3.1)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - HYLabel
   - KakaJSON
   - Kingfisher
   - MJRefresh
@@ -17,6 +19,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - HYLabel
     - KakaJSON
     - Kingfisher
     - MJRefresh
@@ -25,12 +28,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  HYLabel: a1294c88a57fa0c71651e167a6cf2ffcf1de9c28
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: bcb83e5d99b9a94ef386f04b272ddbf7a6ee0ba6
+PODFILE CHECKSUM: 493b36477ed29eb1e618b44db032116031c99b52
 
 COCOAPODS: 1.7.1

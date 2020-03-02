@@ -6,4 +6,5 @@ target 'WeiBoDemo' do
 	pod 'KakaJSON'
 	pod 'MJRefresh'
 	pod 'SVProgressHUD'
+	pod 'HYLabel'
 end

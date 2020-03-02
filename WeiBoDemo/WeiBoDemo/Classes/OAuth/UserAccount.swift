@@ -15,9 +15,9 @@ class UserAccount :NSObject, Convertible, NSCoding {
     /// 授权AccessToken
     var access_token : String?
     /// 过期时间-->秒
-    var expires_in : TimeInterval = 0.0 {
-        didSet {
-            expires_date = NSDate(timeIntervalSinceNow: expires_in)
+    var expires_in : TimeInterval = 0.0{
+        didSet{
+           expires_date = NSDate(timeIntervalSinceNow: expires_in)
         }
     }
     /// 用户ID
@@ -29,8 +29,7 @@ class UserAccount :NSObject, Convertible, NSCoding {
     /// 用户的头像地址
     var avatar_large : String?
     
-    required override init(){}
-
+    required override init(){ }
     // MARK:- 重写description属性
     override var description : String {
         return dictionaryWithValues(forKeys: ["access_token", "expires_date", "uid", "screen_name", "avatar_large"]).description

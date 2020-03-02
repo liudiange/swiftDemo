@@ -26,7 +26,6 @@
 		B4F7494723E6C10D00A61C3F /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7494623E6C10D00A61C3F /* TabbarViewController.swift */; };
 		B4F7494923E6C5BE00A61C3F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7494823E6C5BE00A61C3F /* Home.storyboard */; };
 		B4F7494B23E6C84E00A61C3F /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7494A23E6C84E00A61C3F /* Message.storyboard */; };
-		B4F7494F23E6C94600A61C3F /* Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7494E23E6C94600A61C3F /* Plus.storyboard */; };
 		B4F7495323E6CA3400A61C3F /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7495223E6CA3400A61C3F /* Discover.storyboard */; };
 		B4F7495523E6CA5500A61C3F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F7495423E6CA5500A61C3F /* Profile.storyboard */; };
 		B4F7495823E6CCBE00A61C3F /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7495723E6CCBE00A61C3F /* MessageViewController.swift */; };
@@ -38,6 +37,21 @@
 		B4F749A623E95FAD00A61C3F /* OAuthorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F749A423E95FAD00A61C3F /* OAuthorController.swift */; };
 		B4F749A723E95FAD00A61C3F /* OAuthorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F749A523E95FAD00A61C3F /* OAuthorController.xib */; };
 		B4F749A923E967D300A61C3F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F749A823E967D300A61C3F /* Common.swift */; };
+		B4F74B1B23F535EE00A61C3F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F74B1A23F535EE00A61C3F /* TabBar.swift */; };
+		B4FB9C5A23F69794000CD458 /* HomeUIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9C5923F69794000CD458 /* HomeUIPresenter.swift */; };
+		B4FB9C5E23F6A2F3000CD458 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9C5C23F69F68000CD458 /* TitleButton.swift */; };
+		B4FB9C6223F6D45E000CD458 /* PopOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9C6023F6D45E000CD458 /* PopOverController.swift */; };
+		B4FB9C6323F6D45E000CD458 /* PopOverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4FB9C6123F6D45E000CD458 /* PopOverController.xib */; };
+		B4FB9C6523F6DBC3000CD458 /* PopOverAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9C6423F6DBC3000CD458 /* PopOverAnimation.swift */; };
+		B4FB9CA323F82067000CD458 /* PopAnimationPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9CA223F82067000CD458 /* PopAnimationPresentationController.swift */; };
+		B4FB9CA923F97BE9000CD458 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9CA823F97BE9000CD458 /* Status.swift */; };
+		B4FB9CAB23F97C01000CD458 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9CAA23F97C01000CD458 /* User.swift */; };
+		B4FB9CAD23F97C29000CD458 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9CAC23F97C29000CD458 /* StatusViewModel.swift */; };
+		B4FB9CB023F97D38000CD458 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9CAF23F97D38000CD458 /* NSDate-Extension.swift */; };
+		B4FB9CB423F97EB1000CD458 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9CB223F97EB1000CD458 /* HomeTableViewCell.swift */; };
+		B4FB9CB523F97EB1000CD458 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4FB9CB323F97EB1000CD458 /* HomeTableViewCell.xib */; };
+		B4FB9CB723FA82F4000CD458 /* HomeServicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9CB623FA82F4000CD458 /* HomeServicePresenter.swift */; };
+		B4FB9CD82404006E000CD458 /* DGLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB9CD72404006E000CD458 /* DGLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +99,6 @@
 		B4F7494623E6C10D00A61C3F /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		B4F7494823E6C5BE00A61C3F /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B4F7494A23E6C84E00A61C3F /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
-		B4F7494E23E6C94600A61C3F /* Plus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plus.storyboard; sourceTree = "<group>"; };
 		B4F7495223E6CA3400A61C3F /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		B4F7495423E6CA5500A61C3F /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B4F7495723E6CCBE00A61C3F /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +110,21 @@
 		B4F749A423E95FAD00A61C3F /* OAuthorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthorController.swift; sourceTree = "<group>"; };
 		B4F749A523E95FAD00A61C3F /* OAuthorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAuthorController.xib; sourceTree = "<group>"; };
 		B4F749A823E967D300A61C3F /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B4F74B1A23F535EE00A61C3F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		B4FB9C5923F69794000CD458 /* HomeUIPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIPresenter.swift; sourceTree = "<group>"; };
+		B4FB9C5C23F69F68000CD458 /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		B4FB9C6023F6D45E000CD458 /* PopOverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverController.swift; sourceTree = "<group>"; };
+		B4FB9C6123F6D45E000CD458 /* PopOverController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopOverController.xib; sourceTree = "<group>"; };
+		B4FB9C6423F6DBC3000CD458 /* PopOverAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverAnimation.swift; sourceTree = "<group>"; };
+		B4FB9CA223F82067000CD458 /* PopAnimationPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimationPresentationController.swift; sourceTree = "<group>"; };
+		B4FB9CA823F97BE9000CD458 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		B4FB9CAA23F97C01000CD458 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B4FB9CAC23F97C29000CD458 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		B4FB9CAF23F97D38000CD458 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		B4FB9CB223F97EB1000CD458 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		B4FB9CB323F97EB1000CD458 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		B4FB9CB623FA82F4000CD458 /* HomeServicePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicePresenter.swift; sourceTree = "<group>"; };
+		B4FB9CD72404006E000CD458 /* DGLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGLabel.swift; sourceTree = "<group>"; };
 		E3910979EE2869713F4C69B6 /* Pods-WeiBoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBoDemo.release.xcconfig"; path = "Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +167,6 @@
 			children = (
 				B4F7495423E6CA5500A61C3F /* Profile.storyboard */,
 				B4F7495223E6CA3400A61C3F /* Discover.storyboard */,
-				B4F7494E23E6C94600A61C3F /* Plus.storyboard */,
 				B4F7494A23E6C84E00A61C3F /* Message.storyboard */,
 				B4F7494823E6C5BE00A61C3F /* Home.storyboard */,
 				B48EA2F723E02A9C002D5D59 /* Main.storyboard */,
@@ -167,10 +194,11 @@
 		B44AD37623E1785500DFFD35 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B4FB9CD62403FDE8000CD458 /* View */,
+				B4FB9CAE23F97C77000CD458 /* Category */,
+				B4FB9C5B23F69F41000CD458 /* Common */,
 				B44AD37723E1804700DFFD35 /* NetWork */,
 				B44AD36D23E034B400DFFD35 /* WeiBoDemo-Bridging-Header.h */,
-				B4F749A223E8203E00A61C3F /* SwiftPch.swift */,
-				B4F749A823E967D300A61C3F /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -208,6 +236,10 @@
 		B44AD38323E41C2700DFFD35 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B4FB9CB123F97E91000CD458 /* View */,
+				B4FB9C5F23F6D3BF000CD458 /* UIPopOver */,
+				B4FB9C5823F6975F000CD458 /* Presenter */,
+				B4FB9C5723F69750000CD458 /* Model */,
 				B4F7494323E56F8D00A61C3F /* ViewController */,
 			);
 			path = Home;
@@ -251,6 +283,7 @@
 			children = (
 				B44AD38923E41CD500DFFD35 /* BaseViewController.swift */,
 				B4F7494623E6C10D00A61C3F /* TabbarViewController.swift */,
+				B4F74B1A23F535EE00A61C3F /* TabBar.swift */,
 				B4F7499E23E80F1300A61C3F /* VisterView.swift */,
 				B4F749A023E80F2900A61C3F /* VisterView.xib */,
 			);
@@ -345,6 +378,71 @@
 				B4F7495723E6CCBE00A61C3F /* MessageViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B4FB9C5723F69750000CD458 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4FB9CA823F97BE9000CD458 /* Status.swift */,
+				B4FB9CAA23F97C01000CD458 /* User.swift */,
+				B4FB9CAC23F97C29000CD458 /* StatusViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4FB9C5823F6975F000CD458 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4FB9C5923F69794000CD458 /* HomeUIPresenter.swift */,
+				B4FB9CB623FA82F4000CD458 /* HomeServicePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4FB9C5B23F69F41000CD458 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B4F749A223E8203E00A61C3F /* SwiftPch.swift */,
+				B4F749A823E967D300A61C3F /* Common.swift */,
+				B4FB9C5C23F69F68000CD458 /* TitleButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B4FB9C5F23F6D3BF000CD458 /* UIPopOver */ = {
+			isa = PBXGroup;
+			children = (
+				B4FB9C6023F6D45E000CD458 /* PopOverController.swift */,
+				B4FB9C6123F6D45E000CD458 /* PopOverController.xib */,
+				B4FB9C6423F6DBC3000CD458 /* PopOverAnimation.swift */,
+				B4FB9CA223F82067000CD458 /* PopAnimationPresentationController.swift */,
+			);
+			path = UIPopOver;
+			sourceTree = "<group>";
+		};
+		B4FB9CAE23F97C77000CD458 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B4FB9CAF23F97D38000CD458 /* NSDate-Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B4FB9CB123F97E91000CD458 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4FB9CB223F97EB1000CD458 /* HomeTableViewCell.swift */,
+				B4FB9CB323F97EB1000CD458 /* HomeTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4FB9CD62403FDE8000CD458 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4FB9CD72404006E000CD458 /* DGLabel.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EF26B541409C01B0BD4E31AD /* Pods */ = {
@@ -463,16 +561,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F7494F23E6C94600A61C3F /* Plus.storyboard in Resources */,
 				B4F7495323E6CA3400A61C3F /* Discover.storyboard in Resources */,
 				B48EA2FE23E02A9D002D5D59 /* LaunchScreen.storyboard in Resources */,
 				B4F7494923E6C5BE00A61C3F /* Home.storyboard in Resources */,
 				B44AD38E23E41D1300DFFD35 /* WelcomeViewController.xib in Resources */,
 				B48EA2FB23E02A9D002D5D59 /* Assets.xcassets in Resources */,
+				B4FB9C6323F6D45E000CD458 /* PopOverController.xib in Resources */,
 				B4F7495523E6CA5500A61C3F /* Profile.storyboard in Resources */,
 				B4F7494B23E6C84E00A61C3F /* Message.storyboard in Resources */,
 				B4F749A723E95FAD00A61C3F /* OAuthorController.xib in Resources */,
 				B48EA2F923E02A9C002D5D59 /* Main.storyboard in Resources */,
+				B4FB9CB523F97EB1000CD458 /* HomeTableViewCell.xib in Resources */,
 				B4F749A123E80F2900A61C3F /* VisterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,22 +639,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FB9CAD23F97C29000CD458 /* StatusViewModel.swift in Sources */,
+				B4FB9CA323F82067000CD458 /* PopAnimationPresentationController.swift in Sources */,
+				B4FB9CB423F97EB1000CD458 /* HomeTableViewCell.swift in Sources */,
+				B4FB9C5E23F6A2F3000CD458 /* TitleButton.swift in Sources */,
 				B4F749A923E967D300A61C3F /* Common.swift in Sources */,
+				B4FB9CD82404006E000CD458 /* DGLabel.swift in Sources */,
+				B4FB9CAB23F97C01000CD458 /* User.swift in Sources */,
+				B4FB9C5A23F69794000CD458 /* HomeUIPresenter.swift in Sources */,
 				B44AD38D23E41D1300DFFD35 /* WelcomeViewController.swift in Sources */,
 				B4F749A323E8203E00A61C3F /* SwiftPch.swift in Sources */,
 				B44AD37323E1781D00DFFD35 /* BackDownManager.swift in Sources */,
 				B4F7494723E6C10D00A61C3F /* TabbarViewController.swift in Sources */,
+				B4FB9CB023F97D38000CD458 /* NSDate-Extension.swift in Sources */,
 				B44AD37B23E40B1000DFFD35 /* NetWorkTools.swift in Sources */,
 				B4F7495C23E6CCE900A61C3F /* ProfileViewController.swift in Sources */,
 				B44AD37F23E4156100DFFD35 /* UserAccountManager.swift in Sources */,
+				B4FB9CA923F97BE9000CD458 /* Status.swift in Sources */,
+				B4FB9C6223F6D45E000CD458 /* PopOverController.swift in Sources */,
 				B4F7495A23E6CCD300A61C3F /* DiscoverViewController.swift in Sources */,
+				B4F74B1B23F535EE00A61C3F /* TabBar.swift in Sources */,
 				B4F749A623E95FAD00A61C3F /* OAuthorController.swift in Sources */,
 				B48EA2F223E02A9C002D5D59 /* AppDelegate.swift in Sources */,
 				B4F7494523E56FC900A61C3F /* HomeViewController.swift in Sources */,
 				B4F7499F23E80F1300A61C3F /* VisterView.swift in Sources */,
 				B44AD38A23E41CD500DFFD35 /* BaseViewController.swift in Sources */,
+				B4FB9CB723FA82F4000CD458 /* HomeServicePresenter.swift in Sources */,
 				B44AD37923E1807C00DFFD35 /* networkAdapter.swift in Sources */,
 				B4F7495823E6CCBE00A61C3F /* MessageViewController.swift in Sources */,
+				B4FB9C6523F6DBC3000CD458 /* PopOverAnimation.swift in Sources */,
 				B44AD38123E417F600DFFD35 /* UserAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

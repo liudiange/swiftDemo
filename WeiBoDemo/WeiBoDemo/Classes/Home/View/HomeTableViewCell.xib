@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="homeCellId" selectionStyle="default" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="WeiBoDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_small" translatesAutoresizingMaskIntoConstraints="NO" id="uay-KV-dSp">
+                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Wxu-sf-NFE"/>
+                            <constraint firstAttribute="width" constant="40" id="bHN-EV-Fpc"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_vip" translatesAutoresizingMaskIntoConstraints="NO" id="j0A-QG-KVX">
+                        <rect key="frame" x="38" y="33" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="kxZ-zd-zim"/>
+                            <constraint firstAttribute="height" constant="17" id="zGc-6p-b99"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的昵称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrL-7V-gP1">
+                        <rect key="frame" x="70" y="10" width="62" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_icon_membership_level1" translatesAutoresizingMaskIntoConstraints="NO" id="Oyy-IT-sB2">
+                        <rect key="frame" x="140" y="10" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="DgH-nu-esn"/>
+                            <constraint firstAttribute="width" constant="14" id="cNm-I9-pbS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10分钟前" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7z-cV-jVN">
+                        <rect key="frame" x="70" y="35.5" width="50" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来自我的iphone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gX-qV-iKx">
+                        <rect key="frame" x="128" y="35.5" width="87.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxS-7Y-8gx" customClass="DGLabel" customModule="WeiBoDemo" customModuleProvider="target">
+                        <rect key="frame" x="15" y="65" width="292" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="3gl-KF-GVA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8gX-qV-iKx" firstAttribute="bottom" secondItem="R7z-cV-jVN" secondAttribute="bottom" id="5N1-Ec-0rW"/>
+                    <constraint firstItem="R7z-cV-jVN" firstAttribute="leading" secondItem="uay-KV-dSp" secondAttribute="trailing" constant="15" id="AAk-RF-8zA"/>
+                    <constraint firstItem="j0A-QG-KVX" firstAttribute="bottom" secondItem="uay-KV-dSp" secondAttribute="bottom" id="BC1-zy-OeX"/>
+                    <constraint firstItem="R7z-cV-jVN" firstAttribute="bottom" secondItem="uay-KV-dSp" secondAttribute="bottom" id="D3w-8e-Hco"/>
+                    <constraint firstItem="j0A-QG-KVX" firstAttribute="trailing" secondItem="uay-KV-dSp" secondAttribute="trailing" id="KqL-Tl-Efu"/>
+                    <constraint firstItem="Oyy-IT-sB2" firstAttribute="top" secondItem="QrL-7V-gP1" secondAttribute="top" id="LpC-2B-LWc"/>
+                    <constraint firstAttribute="trailing" secondItem="FxS-7Y-8gx" secondAttribute="trailing" constant="15" id="auz-7p-98f"/>
+                    <constraint firstItem="QrL-7V-gP1" firstAttribute="leading" secondItem="uay-KV-dSp" secondAttribute="trailing" constant="15" id="ayw-5B-wRz"/>
+                    <constraint firstItem="FxS-7Y-8gx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="g88-hv-VA8"/>
+                    <constraint firstItem="uay-KV-dSp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gJh-ja-TFy"/>
+                    <constraint firstItem="uay-KV-dSp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="o9Z-i6-2EK"/>
+                    <constraint firstItem="FxS-7Y-8gx" firstAttribute="top" secondItem="uay-KV-dSp" secondAttribute="bottom" constant="15" id="tTk-KR-kHh"/>
+                    <constraint firstItem="Oyy-IT-sB2" firstAttribute="leading" secondItem="QrL-7V-gP1" secondAttribute="trailing" constant="8" id="tX4-FS-gAh"/>
+                    <constraint firstItem="QrL-7V-gP1" firstAttribute="top" secondItem="uay-KV-dSp" secondAttribute="top" id="vKh-vC-TNX"/>
+                    <constraint firstItem="8gX-qV-iKx" firstAttribute="leading" secondItem="R7z-cV-jVN" secondAttribute="trailing" constant="8" id="x2U-xw-87k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLable" destination="FxS-7Y-8gx" id="72z-yC-HFo"/>
+                <outlet property="contentLableHeightConstraint" destination="3gl-KF-GVA" id="L04-IU-hUk"/>
+                <outlet property="fromLable" destination="8gX-qV-iKx" id="uDx-M8-97C"/>
+                <outlet property="headerImageView" destination="uay-KV-dSp" id="SHb-Pv-fq1"/>
+                <outlet property="levelImageView" destination="Oyy-IT-sB2" id="qHn-KT-nNl"/>
+                <outlet property="nickLable" destination="QrL-7V-gP1" id="twM-fj-VBQ"/>
+                <outlet property="timeLable" destination="R7z-cV-jVN" id="KLV-nG-23u"/>
+                <outlet property="verifyImageView" destination="j0A-QG-KVX" id="mml-wc-3IX"/>
+            </connections>
+            <point key="canvasLocation" x="-36.231884057971016" y="-51.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar_default_small" width="34" height="34"/>
+        <image name="avatar_vip" width="17" height="17"/>
+        <image name="common_icon_membership_level1" width="14" height="14"/>
+    </resources>
+</document>

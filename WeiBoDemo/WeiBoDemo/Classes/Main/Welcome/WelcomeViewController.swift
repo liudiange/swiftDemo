@@ -24,20 +24,22 @@ class WelcomeViewController: UIViewController {
 extension WelcomeViewController {
     func setUpUI()  {
         
+        
+        
         let iconUrlStr = UserAccountManager.shareInstance.accout?.avatar_large
         let url = URL(string: iconUrlStr ?? "")
         
         iconImageView.kf.setImage(with: url, placeholder: UIImage.init(named: "avatar_default_big"), options: [.downloadPriority(10.0),.cacheOriginalImage], progressBlock: { (currentInt, totalInt) in
             
-        }) { (image, error, cacheType, url) in
-            
+        }) {[weak self] (image, error, cacheType, url) in
+            self?.iconImageView.image = image
         }
         // 执行动画
         iconImageViewBotttomConstraint.constant = 300
         UIView.animate(withDuration: 1.5, delay: 0.5, options: .curveEaseInOut, animations: {
             self.view.layoutIfNeeded()
         }) { (finish) in
-            UIApplication.shared.keyWindow?.rootViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()
+            UIApplication.shared.keyWindow?.rootViewController = TabbarViewController()
         }
         
         

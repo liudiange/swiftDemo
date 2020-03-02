@@ -35,3 +35,7 @@ let PicPickerRemovePhotoNote = "PicPickerRemovePhotoNote"
 let ShowPhotoBrowserNote = "ShowPhotoBrowserNote"
 let ShowPhotoBrowserIndexKey = "ShowPhotoBrowserIndexKey"
 let ShowPhotoBrowserUrlsKey = "ShowPhotoBrowserUrlsKey"
+// MARK: - 常规的参数
+let ScreenWidth = UIScreen.main.bounds.size.width
+let ScreenHeight = UIScreen.main.bounds.size.width
+
